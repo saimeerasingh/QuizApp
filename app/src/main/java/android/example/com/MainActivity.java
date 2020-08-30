@@ -116,6 +116,9 @@ public class MainActivity extends AppCompatActivity {
         boolean isCheckedYemen = answer_Yemen_checkbox.isChecked();
         if (isCheckedIran && isCheckedOman && isCheckedYemen) {
             score = score + 1;
+        } else {
+            TextView ninthAnswerView = (TextView) findViewById(R.id.feedback_ninth_answer_view);
+            ninthAnswerView.setVisibility(View.VISIBLE);
         }
 
     }
