@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:context=".MainActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/money" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:alpha="0.9"
+                    android:elevation="@dimen/cardview_compat_inset_shadow"
+                    app:cardBackgroundColor="@color/cardColor"
+                    app:cardCornerRadius="15dp">
+
+
+                    <EditText
+                        android:id="@+id/enter_name_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/name"
+                        android:inputType="textCapWords"
+                        android:padding="10dp" />
+
+                </androidx.cardview.widget.CardView>
+                <!--        name ends-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:alpha="0.8"
+                    android:elevation="@dimen/cardview_compat_inset_shadow"
+                    app:cardCornerRadius="15dp">
+
+                    <!-- first question-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:paddingTop="12dp"
+                            android:text="@string/question1" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/sk_answer_one_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/won"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/sk_answer_two_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/baht"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/sk_answer_three_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/yuan"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                        </RadioGroup>
+                        <TextView
+                            android:id="@+id/feedback_first_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback1"
+                            android:visibility="invisible" />
+                        <!--Second Question-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/question2" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rus_answer_one_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/ringgit"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/rus_answer_two_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/ruble"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/rus_answer_three_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rupee"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/feedback_second_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback2"
+                            android:visibility="invisible" />
+                        <!--            Third Question-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/question3" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/egypt_answer_one_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/dollar"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/egypt_answer_two_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/lira"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/egypt_answer_three_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pound"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                        </RadioGroup>
+                        <TextView
+                            android:id="@+id/feedback_third_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback3"
+                            android:visibility="invisible" />
+                        <!--            Fourth Question-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/question4" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/mexi_answer_one_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/dollar"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/mexi_answer_two_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/peso"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/mexi_answer_three_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/krona"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/feedback_fourth_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback4"
+                            android:visibility="invisible" />
+                        <!--            Fifth Question-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/question5" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/malay_answer_one_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/rupee"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/malay_answer_two_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/ringgit"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/malay_answer_three_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/baht"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/feedback_fifth_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback5"
+                            android:visibility="invisible" />
+
+                        <!--            Sixth Question-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/question6" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/moroccan_answer_one_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/dollar"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/moroccan_answer_two_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/dirham"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/moroccan_answer_three_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/leu"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                        </RadioGroup>
+                        <TextView
+                            android:id="@+id/feedback_sixth_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback6"
+                            android:visibility="invisible" />
+
+                        <!--            Seventh Question-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/question7" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/thai_answer_one_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/dirham"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/thai_answer_two_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:text="@string/baht"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                            <RadioButton
+                                android:id="@+id/thai_answer_three_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rupee"
+                                android:textAppearance="?android:textAppearanceSmall" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/feedback_seventh_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback7"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:alpha="0.9"
+                    android:elevation="@dimen/cardview_compat_inset_shadow"
+                    app:cardBackgroundColor="@color/cardColor"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/actor"
+                            android:text="@string/question8"
+                            android:textColor="@color/textColor1" />
+
+
+                        <EditText
+                            android:id="@+id/rupee_answer_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/answer"
+                            android:inputType="textCapWords" />
+
+                        <TextView
+                            android:id="@+id/feedback_eighth_answer_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="@string/feedback8"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:alpha="0.8"
+                    android:elevation="@dimen/cardview_compat_inset_shadow"
+                    app:cardBackgroundColor="@color/cardColor"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/question9"
+                            android:textColor="@color/textColor1" />
+
+                        <CheckBox
+                            android:id="@+id/answer_iran_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/checkBoxAnswerIran"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <CheckBox
+                            android:id="@+id/answer_oman_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/checkBoxAnswerOman"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <CheckBox
+                            android:id="@+id/answer_Yemen_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/checkBoxAnswerYemen"
+                            android:textAppearance="?android:textAppearanceMedium" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/feedback_ninth_answer_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="@string/feedback9"
+                        android:visibility="invisible" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="submitAnswer"
+                    android:text="@string/submit" />
+                <TextView
+                    android:id="@+id/final_score_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

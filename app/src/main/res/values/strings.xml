@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="name">Name</string>
+    <string name="question1">What is the name of the South Korean currency?</string>
+    <string name="question2">Russia\'s currency is?</string>
+    <string name="question3">What do you call Egyptian currency?</string>
+    <string name="question4">What\'s the Mexican currency called?</string>
+    <string name="question5">Malaysia\'s currency is?</string>
+    <string name="question6">What\'s the name of the Moroccan currency?</string>
+    <string name="question7">What do you call the currency of Thailand?</string>
+    <string name="question8">Which currency\'s symbol is ₹? </string>
+    <string name="question9">Which country / countries have Rial as their currency?</string>
+    <string name="won">Won</string>
+    <string name="ruble">Ruble</string>
+    <string name="pound">Pound</string>
+    <string name="peso">Peso</string>
+    <string name="ringgit">Ringgit</string>
+    <string name="krona">Krona</string>
+    <string name="lira">Lira</string>
+    <string name="baht">Baht</string>
+    <string name="rupee">Rupee</string>
+    <string name="dirham">Dirham</string>
+    <string name="leu">Leu</string>
+    <string name="yuan">Yuan</string>
+    <string name="shilling">Shilling</string>
+    <string name="euro">Euro</string>
+    <string name="dollar">Dollar</string>
+    <string name="submit">Submit Answers</string>
+    <string name="feedback1">The Right Answer is : Won</string>
+    <string name="feedback2">The Right Answer is : Ruble</string>
+    <string name="feedback3">The Right Answer is : Pound</string>
+    <string name="feedback4">The Right Answer is : Peso</string>
+    <string name="feedback5">The Right Answer is : Ringgit</string>
+    <string name="feedback6">The Right Answer is : Dirham</string>
+    <string name="feedback7">The Right Answer is : Baht</string>
+    <string name="feedback8">The Right Answer is : Rupee</string>
+    <string name="feedback9">The Right Answer is :All the above </string>
+    <string name="reset">Reset</string>
+    <string name="answer">Your answer here</string>
+    <string name="checkBoxAnswerIran">Iran</string>
+    <string name="checkBoxAnswerOman">Oman</string>
+    <string name="checkBoxAnswerYemen">Yemen</string>
+
+
+
+
+
+</resources>
